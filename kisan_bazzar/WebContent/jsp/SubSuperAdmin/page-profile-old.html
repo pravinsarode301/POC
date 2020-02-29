@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--================================================================================
+  Item Name: Materialize - Material Design Admin Template
+  Version: 1.0
+  Author: GeeksLabs
+  Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+<meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+<title>User Profile Page | Practice Success</title>
+<!-- Favicons-->
+<link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+<!-- Favicons-->
+<link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+<!-- For iPhone -->
+<meta name="msapplication-TileColor" content="#00bcd4">
+<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+<!-- For Windows Phone -->
+<!-- CORE CSS-->
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+<!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+<link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+<body>
+<!-- Start Page Loading -->
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<!-- End Page Loading -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START HEADER -->
+<header id="header" class="page-topbar">
+  <!-- start header nav-->
+  <div class="navbar-fixed">
+    <nav class="cyan">
+      <div class="nav-wrapper">
+        <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/logo.png" alt="Practice Success logo" style="height: 60px !important; width: 170px !important;"></a> <span class="logo-text">Materialize</span></h1>
+        <ul class="right hide-on-med-and-down">
+          <li class="search-out">
+            <input type="text" class="search-out-text">
+          </li>
+          <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><span>Welcome ! Pravin D</span></a> </li>
+          <!-- Dropdown Trigger -->
+          <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-action-perm-identity"></i></a> </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- end header nav-->
+</header>
+<!-- END HEADER -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START MAIN -->
+<div id="main">
+  <!-- START WRAPPER -->
+  <div class="wrapper">
+    <!-- START LEFT SIDEBAR NAV-->
+    <aside id="left-sidebar-nav">
+      <ul id="slide-out" class="side-nav fixed leftside-navigation">
+        <li class="bold" style="margin-top:20px;"><a href="page-profile-view.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Profile</a> </li>
+        <li class="bold"><a href="page-cources.html" class="waves-effect waves-cyan"><i class="mdi-action-description"></i> My Courses </a> </li>
+        <li class="bold"><a href="page-videos.html" class="waves-effect waves-cyan"><i class="mdi-av-play-shopping-bag"></i> My Videos </a> </li>
+        <li class="bold"><a href="page-payment-history.html" class="waves-effect waves-cyan"><i class="mdi-action-wallet-membership"></i> Payment History </a> </li>
+        <li class="bold"><a href="page-reset-password.html" class="waves-effect waves-cyan"><i class="mdi-action-autorenew"></i> Reset Password </a> </li>
+        <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-settings-power"></i> Logout</a> </li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu" ></i></a> </aside>
+    <!-- END LEFT SIDEBAR NAV-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- START CONTENT -->
+    <section id="content">
+      <!--breadcrumbs start-->
+      <div id="breadcrumbs-wrapper" class=" grey lighten-3">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <div class="row">
+                <div class="col s8">
+                  <h5 class="breadcrumbs-title">Pages</h5>
+                  <ol class="breadcrumb">
+                    <li><a href="index.html">Dashboard</a> </li>
+                    <li><a href="#">Pages</a> </li>
+                    <li class="active"> User Prafile </li>
+                  </ol>
+                </div>
+                <div class="col s4"><br />
+                  <a href="#"><h6 class="btn cyan waves-effect waves-light right">Cancel</h6></a>
+                  <a href="#"><h6 class="btn cyan waves-effect waves-light right margin-10">Save</h6></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--breadcrumbs end-->
+      <!--start container-->
+      <div class="container">
+        <!--Form Advance-->
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <div class="card-panel">
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="col s2" style="padding:0px;"> <i class="mdi-action-account-box user-icon-size"></i> </div>
+                    <div class="col s10">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input id="first_name" type="text">
+                          <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="last_name" type="text">
+                          <label for="last_name">Last Name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input id="mobile_no" type="text">
+                          <label for="mobile_no">Mobile No</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="email" type="text">
+                          <label for="email">Email</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input type="date" class="datepicker">
+                      <label for="dob">DOB</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="occupation" type="password">
+                      <label for="occupation">Occupation</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="address1" type="text">
+                      <label for="address1">Address 1</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="address2" type="password">
+                      <label for="address2">Address 2</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="city" type="text">
+                      <label for="city">City</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="state" type="password">
+                      <label for="state">State</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="country" type="text">
+                      <label for="country">Country</label>
+                    </div>
+                    <div class="file-field input-field col s6">
+                      <input class="file-path validate" type="text"/>
+                      <div class="btn"> <span>Profile Picture</span>
+                        <input type="file" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <select>
+                        <option value="" disabled selected>Choose Academic Qualification</option>
+                        <option value="1">Manager</option>
+                        <option value="2">Developer</option>
+                        <option value="3">Business</option>
+                      </select>
+                      <label>Select Academic Qualification</label>
+                    </div>
+                    <div class="input-field col s6"> </div>
+                  </div>
+                  <div class="row">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit <i class="mdi-content-send right"></i> </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTENT -->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- START RIGHT SIDEBAR NAV-->
+  <aside id="right-sidebar-nav">
+        <ul id="chat-out" class="side-nav rightside-navigation">
+            <li class="li-hover">
+            <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+            </li>
+            <li class="li-hover">
+                <div class="row">
+                	<div class="col s12">
+                    	<a href="#">My Profile</a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row">
+                	<div class="col s12">
+                    	<a href="#">My Courses</a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row">
+                	<div class="col s12">
+                    	<a href="#">My Videos</a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row">
+                	<div class="col s12">
+                    	<a href="#">Payment History</a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </li>
+        </ul>
+      </aside>
+  <!-- LEFT RIGHT SIDEBAR NAV-->
+  </div>
+  <!-- END WRAPPER -->
+</div>
+<!-- END MAIN -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START FOOTER -->
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container"> <span>Copyright © 2016 <a class="grey-text text-lighten-4" href="#" target="_blank">Practice Success</a> All rights reserved.</span> <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://pradoinfotech.com/">Prado Infotech</a></span> </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+<!-- ================================================
+    Scripts
+    ================================================ -->
+<!-- jQuery Library -->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<!--materialize js-->
+<script type="text/javascript" src="js/materialize.js"></script>
+<!--prism-->
+<script type="text/javascript" src="js/prism.js"></script>
+<!--scrollbar-->
+<script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!-- chartist -->
+<script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>
+<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+<script type="text/javascript" src="js/plugins.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container-fluid" style="background: blue none repeat scroll 0 0; height:7px;"> </div>
+  <div class="container-fluid bgcolor-white">
+  <div class="container-fluid">
+  <div class="container">
+	<div class="container lr-padding-con">	
+		<div class="row">
+			<div class="col-md-3">
+			
+				<a href="/">
+					<center>
+						<img src="/img/logo1.png" class="img-responsive toppad-20" alt="">
+					</center>
+				</a>
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-4"></div>
+					
+					<div class="col-md-8 table-responsive">
+						
+												
+						<form action="/" class="" id="loginfrm1" method="post" accept-charset="utf-8"><div style="display:none;"><input name="_method" value="POST" type="hidden"></div>						
+						
+							<table class="table login-table">
+								
+								<tbody><tr class="tr-border-hidden">
+									<td>
+										
+										<!--<input type="text" class="form-control" placeholder="User Name" />-->
+										<div class="input text required"style="margin-top: 32px;
+margin-left: 576px;"><input name="data[User][email]" placeholder="Email" class="form-control1 place-he validate[required,custom[email]]" data-prompt-position="bottomLeft" data-errormessage-value-missing="* Enter your email id" id="UserEmail" type="text"></div>										
+									</td>
+									<td>
+										<!--<input type="text" class="form-control" placeholder="Password" />-->
+										<div class="input password required"style="margin-top: 30px;"><input name="data[User][password]" placeholder="Password" class="form-control1 place-he validate[required]" data-prompt-position="bottomLeft" data-errormessage-value-missing="* Enter your password" id="UserPassword" type="password"></div>									</td>
+									<td>
+										<!--<input type="submit" class="btn btn-primary pull-right btn-width" value="Login" />-->
+										<input class="btn btn-primary pull-right btn-width" style="margin-top:29px;"title="Login" value="Login" type="submit">									</td>
+								
+								</td><tr>
+																		
+								<tr class="tr-border-hidden">
+									<td colspan="3">
+										<p class="pull-right" style=" height : 50px; margin-left: 578px; margin-bottom: 20px; font-size: 19px;"><a href="/users/forgot_password" class="color-gray">Forgot Password?</a></p>
+										
+									</td>
+								</tr>
+							</tbody></table>
+						</form>					
+						</div>
+				</div>
+			</div>
+		</div>
+	</div><br>  
+
+    
+<div class="container-fluid tbpad-10">
+	<div class="container lr-padding-con">
+		<div class="row">
+			<div class="col-md-12">
+			
+  
+<h1 class="font-size-20 bottommar-0"><img src="/img/6.png" class="icon-w"> Contact Us</h1>
+
+</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid bgcolor-white">
+<!-- Start container -->
+	<div class="container lr-padding-con">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 tbpad-10">
+<center><h4 class="text-center font-size-40" style="color:blue">Submit Your Details, We Will Get Back To You</h4><hr></center>
+			</div>
+			<div class="col-md-2"></div>
+</div>
+<div class="container">
+<center>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="panel panel-default bg-of-log">
+                	<div class="panel-body">
+                	<form action="/contacts/send" id="contactfrm" method="post" accept-charset="utf-8"><div style="display:none;"><input name="_method" value="POST" type="hidden"></div>                	                    	<div class="row">
+                        	<div class="col-md-6">
+                                <!--<input type="text" class="form-control text-b" placeholder="" />-->
+                                <div class="input text" style="margin-left:-150px; margin-top:29px;"><input name="data[Contact][name]" maxlength="100" size="40" class="place-he form-control2 sign-1 login-input-border validate[required,custom[fullname]]" tabindex="1" placeholder="Your Name" id="ContactName" type="text"></div>
+								</div></br>
+                            <div class="col-md-6">
+                                <!--<input type="text" class="form-control text-b" placeholder="" />-->
+                                <div class="input text"style="margin-left:-150px; margin-top:29px;"><input name="data[Contact][email]" maxlength="100" size="40" class="place-he form-control2 sign-1 login-input-border validate[required,custom[email]]" tabindex="2" placeholder="Email Address" id="ContactEmail" type="text"></div>                            </div>
+                        </div></br>
+                        <div class="row tbpad-10">
+                            <div class="col-md-12">
+                                <!--<input type="text" class="form-control text-b" text-b placeholder="" />-->
+                                <div class="input text"style="margin-left:-150px; margin-top:29px;"><input name="data[Contact][subject]" maxlength="100" size="40" class="place-he form-control2 sign-1 login-input-border validate[required]" tabindex="3" placeholder="Subject" id="ContactSubject" type="text"></div>                            </div>
+                        </div></br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!--<textarea class="form-control text-b" rows="2"> </textarea>-->
+                                <div class="input textarea"style="margin-left:-25px; margin-top:29px;"><textarea name="data[Contact][message]" cols="50" class="place-he form-control222 sign-1 login-input-border" rows="4" tabindex="4" placeholder="Message" id="ContactMessage"></textarea></div>                            </div>
+                        </div></br>
+                        
+                        <div class="row tbpad-10">
+                            <div class="col-md-12">
+                            	
+							</div></br>							
+                        </div>
+                        <div class="row">
+							<div class="col-md-12">			
+                                <!--<input type="submit" class="btn btn-primary pull-right bg-btn" value="Send Message" />-->
+                               
+                                
+                                <div class="submit"style="margin-left:700px;"><input class="btn btn-danger place-he pull-right" title="Send Message" tabindex="5" value="Send Message" type="submit"></div>                                                             </div>
+                        </div></form>
+                    </div>
+                </div>
+			</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+	</div>
+
+</center>
+	
+	
+<!-- End container -->
+
+	
+	<!-- START FOOTER -->
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container"style="background-color: blue">
+      <center style="margin-top: 8px; height:55px;">
+        <span>About As </span> &nbsp; &nbsp; &nbsp; <span class="right">/</span> &nbsp; &nbsp; &nbsp; <span class="right">Our Services</span> &nbsp; &nbsp; &nbsp; <span class="right">/</span> &nbsp; &nbsp; &nbsp; <span class="right">Moto</span> &nbsp; &nbsp; &nbsp; <span class="right">/</span> &nbsp; &nbsp; &nbsp; <span class="right">Testmonial</span> &nbsp; &nbsp; &nbsp; <span class="right">/</span> &nbsp; &nbsp; &nbsp; <span class="right">FAQ</span>
+      </center>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+<!-- START FOOTER -->
+<center>
+  <footer class="page-footer1">
+  <div class="footer-copyright">
+    <div class="container"style="background-color: blue"> <span style="margin:left">Copyright © 2016 <a class="grey-text text-lighten-4" href="#" target="_blank" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;>Shetakari Bazar</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; All rights reserved.</span> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<span class="right"> Powered by <a class="grey-text text-lighten-4" href="http://pradoinfotech.com/">Prado Infotech</a></span> </div>
+  </div>
+</center>
+</footer>
+</div>
+<!-- END FOOTER -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
